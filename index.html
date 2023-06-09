@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="select">
+        <option  value="A">Ổi</option>
+        <option  value="A">Dưa hấu</option>
+        <option  value="B">Táo</option>
+        <option  value="B">Xoài</option>
+        <option  value="C">Cam</option>
+        <option  value="C">Chôm Chôm</option>
+        <option  value="D">Măng cụt</option>
+    </select>
+    <button onclick="GiaHoaQua()">Xem giá</button>
+
+    <script>
+        function GiaHoaQua() {
+            let select = document.getElementById("select").value;
+
+            let result = 0;
+            switch (select) {
+                case "A":
+                    result = "20000VNĐ";
+                    break;
+                case "B":
+                    result = "30000VNĐ";
+                    break;
+                case "C":
+                    result = "40000VNĐ";
+                    break;
+                case "D":
+                    result = "50000VNĐ";
+                    break;
+                default:
+                    result = "Không hợp lệ"
+                    break;
+            }
+            alert(result);
+        }
+    </script>
+</body>
+
+</html>
